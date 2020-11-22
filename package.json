@@ -1,0 +1,15 @@
+{
+  "name": "covid-project",
+  "version": "1.0.0",
+  "description": "no idea",
+  "main": "sketch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "matter-js": "^0.14.2",
+    "p5": "^1.1.9"
+  }
+}
