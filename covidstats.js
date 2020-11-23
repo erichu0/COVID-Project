@@ -1,4 +1,4 @@
-var totalDeaths, newDeaths, timePerDeath;
+var totalDeaths, newDeaths, timePerDeath, timePerDeathSeconds;
 apiUrl = "https://cors-anywhere.herokuapp.com/https://api.covid19api.com/summary"
 
 //get seconds since start of the day
@@ -15,14 +15,16 @@ function mainThing() {
             totalDeaths = myJson.Global.TotalDeaths;
             newDeaths = myJson.Global.NewDeaths;
             timePerDeath = (24*60*60/newDeaths)*1000;
+            timePerDeathSeconds = Math.round(24*60*60/newDeaths*100)/100;
             deathSinceStartOfDay = totalDeaths-newDeaths+(Math.floor(timeSinceMidnight/timePerDeath))
-        })
 
-        //update the site with numbers and new circles every certain amount of secs
-        .then(() => {
             //spawn and edit for the first circle bc the interval function starts later
-            document.querySelector('#timePerDeath').innterHTML = String(timePerDeath/1000);
+            
             document.querySelector('#caseCount').innerHTML = deathCount();
+            
+
+            console.log(document.getElementById('tpd').innerHTML)
+            document.getElementById('tpd').innerHTML = timePerDeathSeconds;
 
             people.push(new person(Math.random()*winWidth, -30, Math.random()*10+40));
 
@@ -39,6 +41,8 @@ function mainThing() {
             }, timePerDeath);
         })
     }
+
+
 
 function deathCount() {
     return `COVID-19 Deaths Worldwide: ${deathSinceStartOfDay+1+people.length}`
