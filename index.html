@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='style.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
-    
+
     <script src="node_modules\matter-js\build\matter.js"></script>
     <script src="node_modules\p5\lib\p5.js"></script>
 
     <title>Visualizing the Effects of COVID-19</title>
 </head>
+
 <body>
-    <div>
+    <div class='top-text'>
         <h1 id='caseCount'></h1>
-        <h2></h2>
-        <h2>Yesterday, there was a person who died every <u><span id='tpd'>hello</span></u> seconds on average from COVID-19.<br>These aren't just numbers.<br>These are real people.</h2>
+        <h2>Yesterday, there was a person who died every <u><span id='tpd'></span></u> seconds (on average) from
+            COVID-19.<br><br>These aren't just numbers.<br>These are real people.</h2>
     </div>
-    <div>
-        <h3 id='deathSinceStart'>There <span id='hasHave'>has</span> been around <span id='liveDeaths'>1 person</span> who <!--<span id='hasHave2'>has</span> -->died from COVID-19 since you opened this website.</h3>
+    <div id='bottom-text'>
+        <h3 id='deathSinceStart'>There has been around <span id='liveDeaths'>1 person</span>
+            who <span id='hasHave'>has</span> died from COVID-19 since you opened this website.
+        </h3>
         <h3 id='warning'>Please stay safe, social distance, and wear a mask.</h3>
         <div id='govtSites'>
-            <h3 class='site'>For more information about COVID-19 in the United States, visit the <a href = 'https://www.coronavirus.gov/'>US Coronavirus Website</a>.</h3>
-            <h3 class='site'>For more information about COVID-19 around the world, visit the <a href = 'https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public'>WHO Coronavirus Website</a>.</h3>
+            <h3 class='site'>For more information about COVID-19 in the United States, visit the <a
+                    href='https://www.coronavirus.gov/'>US Coronavirus Website</a>.</h3>
+            <h3 class='site'>For more information about COVID-19 around the world, visit the <a
+                    href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public'>WHO
+                    Coronavirus Website</a>.</h3>
         </div>
-        </div>
-    <p id='disclaimer'>*Statistics are calculated using average time per death of the prior day, so the numbers might be slightly inaccurate. Correct numbers are uploaded when they are available from <a href = 'https://documenter.getpostman.com/view/10808728/SzS8rjbc'>https://documenter.getpostman.com/view/10808728/SzS8rjbc</a>.<br>Inspiration: <a href='https://youtu.be/GF9riam_CJs'>https://youtu.be/GF9riam_CJs</a></p>  
+        <p id='disclaimer'>*Statistics are calculated using average time per death of the prior day, so the numbers
+            might be slightly inaccurate. Correct numbers are uploaded when they are available from <a
+                href='https://documenter.getpostman.com/view/10808728/SzS8rjbc'>https://documenter.getpostman.com/view/10808728/SzS8rjbc</a>.<br>Inspiration:
+            <a href='https://youtu.be/GF9riam_CJs'>https://youtu.be/GF9riam_CJs</a></p>
+    </div>
     <script src='person.js'></script>
     <script src='covidstats.js'></script>
     <script src='sketch.js'></script>
 </body>
+
 </html>

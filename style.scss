@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Lora', serif;
+    box-sizing: border-box;
+}
+
+// canvas {
+//     width: 100%;
+//     height: calc(100%-150px);
+//     position: aboslute;
+//     top: 500px;
+// }
+
+.top-text {
+    position: absolute;
+    background-color: transparent;
+    width: 90%;
+    left: 7.5%;
+    top: 7.5%;
+}
+
+#caseCount {
+    color: white;
+    font-size: 3.7vh;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: white;
+    font-size: 1.9vh;
+}
+
+// #bottom-text {
+//     display:flex;
+//     flex-direction:column;
+//     position:absolute;
+//     align-content: center;
+//     bottom: 0;
+//     height: 30%;
+//     width: 100%;
+// }
+
+#bottom-text {
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+    width: 100%;
+    padding: 3vh 7.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#deathSinceStart {
+    position: relative;
+    font-size: 2.25vh;
+}
+
+#liveDeaths {
+    color: red;
+    font-size: 130%;
+}
+
+#warning {
+    position: relative;
+    font-size: 1.5vh;
+}
+
+#govtSites {
+    position: relative;
+    font-size: 1.25vh;
+}
+
+#disclaimer {
+    position: relative;
+    font-size: 1vh;
+}
+
+a {
+    color: black;
+}

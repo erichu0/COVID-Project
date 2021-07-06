@@ -12,4 +12,4 @@ console.log(midnight, date);
 console.log(midnight.getSeconds());
 console.log(date.getSeconds());
 
-console.log((date-midnight)/1000);
+console.log((date - midnight) / 1000);
