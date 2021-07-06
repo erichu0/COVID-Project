@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+img {
+  display: none;
+}
+
 .top-text {
   position: absolute;
   background-color: transparent;
